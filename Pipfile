@@ -6,6 +6,8 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 sphinx = "*"
+livereload = "*"
+sphinxcontrib-marmaid = "*"
 
 [packages]
 numpy = "*"
@@ -17,3 +19,4 @@ python_version = "3.7"
 lint = "flake8 ."
 test = "python -m unittest"
 doc = "make -C docs html"
+"doc:dev" = "python docs/dev_server.py"
